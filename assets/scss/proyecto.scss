@@ -1,0 +1,26 @@
+@import "../bootstrap-5.3.3/scss/bootstrap.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+.custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-border-color: var(--bd-violet-bg);
+    --bs-popover-header-bg: var(--bd-violet-bg);
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+  }
+
+
+.btn{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+.hidden {
+  display: none;
+}

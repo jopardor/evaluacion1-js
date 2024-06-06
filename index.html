@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bootstrap</title>
+    
+    <link rel="stylesheet" href="assets/scss/proyecto.css">
+</head>
+<body>
+
+
+
+<div class="container p-4">
+  <div class="row">
+    <h1>Componentes</h1>
+    <hr>
+    <p class="p-3 align-items-center justify-content-center">Hola estos son 4 componentes: Alert, Popover, Toast & Offcanvas.</p>
+    <hr>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center text-center p-2 m-2"> <!--ROW-1-->
+      <!--ALERTA-->
+      <div class="col-md-6"> 
+
+          <button type="button" class="btn btn-primary" id="liveAlertBtn" data-titulo="Hola, esta es mi nueva alerta!" data-bs-target="#alertaContenedor">Alert</button>
+
+          <div class="alert alert-warning m-1 fade hidden" role="alert" id="alertaContenedor" > 
+            <a id="tituloAlert">A simple primary alert with Give it a click if you like.</a>
+         </div>
+
+      </div>
+
+
+      <!--POPOVER-->
+      <div class="col-md-6">
+
+          <div>
+              <button class="btn btn-danger" 
+              title="Hola"
+              data-bs-toggle="popover" 
+              data-bs-content="Holi este es poppover">
+              Popover</button>
+          </div>
+
+      </div>
+  </div>
+ </div> <!--ROW-1-FIN-->
+
+
+
+
+ <div class="row justify-content-center align-items-center text-center p-2 m-2"> <!--ROW-2-->
+  <!--TOAST-->
+  <div class="col-md-6">
+
+         <!-- botonTOAST -->
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Toast</button>  
+
+        <!-- toastbody -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Hello, world! This is a toast message.
+                </div>
+         </div>
+     </div>
+
+
+  </div>
+
+
+  <!--OFFCANVAS-->
+  <div class="col-md-6">
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" data-titulo="Hola! Qué Suerte!!!!!" data-contenido="Está funcionando mi modal uwu!">
+          Offcanvas
+        </button>
+      
+        <div class="offcanvas offcanvas-start justify-content-center" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header justify-content-center p-3">
+            <h5 class="offcanvas-title" id="tituloOffcanvas">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" id="bodyOffcanvas">
+            <div>
+              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            </div>
+
+          </div>
+        </div>
+  </div>
+
+  </div>
+  </div> <!--ROW-2-FIN-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+
+<script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
